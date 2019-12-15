@@ -3,7 +3,7 @@ services:
   rasa_core:
     image: rasa/rasa_core:latest
     ports:
-      - 5504:5005
+      - 4112:5005
     volumes:
       - ./models/rasa_core:/app/models
       - ./config:/app/config
