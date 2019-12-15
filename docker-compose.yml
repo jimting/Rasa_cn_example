@@ -15,8 +15,6 @@ services:
       - rest
       - --endpoints
       - config/endpoints.yml
-      - -u
-      - current/
   rasa_nlu:
     image: rasa/rasa_nlu:latest-spacy
     volumes:
