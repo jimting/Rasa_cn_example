@@ -28,7 +28,6 @@ services:
       - models
       - -c
       - config/nlu_config.yml
-    command: pip install jieba
   action_server:
     image: rasa/rasa_core_sdk:latest
     volumes:
