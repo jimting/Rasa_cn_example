@@ -10,14 +10,11 @@ actions:
   - utter_unhappy
   - action_ask_weather
 
-
 templates:
   utter_greet:
   - text: "你好啊！你今天過得如何呀？"
-
   utter_happy:
   - text: "你好棒 好棒 好棒棒！"
-
   utter_unhappy:
   - text: "不要哭哭哦"
 

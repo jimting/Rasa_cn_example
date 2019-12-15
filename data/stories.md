@@ -12,7 +12,7 @@
   - utter_unhappy
   - action_restart
   
-## story_ask_weather
+## ask_weather
 * ask_weather
   - action_ask_weather
   - action_restart
