@@ -18,11 +18,12 @@ services:
       - -u
       - current/
   rasa_nlu:
-    image: rasa/rasa_nlu:latest-tensorflow
+    image: rasa/rasa_nlu:latest-mitie
     volumes:
       - ./models/rasa_nlu:/app/models
       - ./config:/app/config
     command:
+      - -c "apt-get -y install nginx"
       - start
       - --path
       - models
