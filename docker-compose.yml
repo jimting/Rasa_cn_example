@@ -7,6 +7,7 @@ services:
     volumes:
       - ./models/rasa_core:/app/models
       - ./config:/app/config
+      - ./data:/app/data
     command:
       - start
       - --core
@@ -33,3 +34,4 @@ services:
     image: rasa/rasa_core_sdk:latest
     volumes:
       - ./actions:/app/actions
+      - ./data:/app/data
