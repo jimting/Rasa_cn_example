@@ -1,3 +1,0 @@
-rasa_contrib
-tensorflow==1.14.0
-rasa-sdk~=1.1.0
