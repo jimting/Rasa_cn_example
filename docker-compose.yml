@@ -30,8 +30,6 @@ services:
       - models
       - -c
       - config/nlu_config.yml
-      - -u
-      - current/
   action_server:
     image: rasa/rasa_core_sdk:latest
     volumes:
