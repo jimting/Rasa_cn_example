@@ -1,43 +1,38 @@
-# Restaurant Bot
-
-This example includes a file called `run.py`, which contains an example
-of how to use Rasa directly from your python code.
-
-## What’s inside this example?
-
-This example contains some training data and the main files needed to build an 
-assistant on your local machine. The `restaurantbot` consists of the following files:
-
-- **data/nlu.md** contains training examples for the NLU model  
-- **data/stories.md** contains training stories for the Core model  
-- **actions.py** contains some custom actions
-- **config.yml** contains the model configuration
-- **domain.yml** contains the domain of the assistant  
-- **endpoints.yml** contains the webhook configuration for the custom action  
-- **policy.py** contains a custom policy
-- **run.py** contains code to train a Rasa model and use it to parse some text
-
-## How to use this example?
-
-To train your restaurant bot, execute
+## 安装
+```bash
+bash ./install_dependency.bash
 ```
+
+
+## 训练
+本项目可以使用 GUI 来训练，但是可能会存在 bug, 因此目前推荐使用命令行来训练
+```bash
 rasa train
 ```
-This will store a zipped model file in `models/`.
 
-To chat with the bot on the command line, run
-```
-rasa shell
-```
 
-Or you can start an action server plus a Rasa server by
-```
-rasa run actions
-rasa run -m models --endpoints endpoints.yml
+## 启动
+### 启动 action server
+```bash
+SENIVERSE_KEY=xxxx rasa run actions
 ```
 
-For more information about the individual commands, please check out our 
-[documentation](http://rasa.com/docs/rasa/user-guide/command-line-interface/).
+`xxxx` 部分应该替换成从 [心知天气](https://www.seniverse.com/) 申请获得的 API key 。用户可以免费注册，注册后可以在后台找到 `我的API密钥`。
 
-## Encountered any issues?
-Let us know about it by posting on [Rasa Community Forum](https://forum.rasa.com)!
+### 启动 rasa x
+```bash
+rasa x --enable-api --auth-token 12345678
+```
+
+启动后会自动打开浏览器窗口
+
+
+## 使用
+### GUI 训练模型 (使用命令行训练后，请忽略本步骤)
+在 rasa x 左侧菜单栏，点击 `训练` 按钮，训练模型
+
+### 设定为 production model
+在 rasa x 左侧菜单栏，点击 `models` 菜单进入模型管理，鼠标放到模型上，在其右边会出现 `...` 按钮，点击后，将之选择为 `production`。
+
+### 人机对话
+在 rasa x 左侧菜单栏，点击 `Talk to your bot` 菜单进入 人机对话界面
