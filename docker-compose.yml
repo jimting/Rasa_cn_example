@@ -23,12 +23,12 @@ services:
       - ./models/rasa_nlu:/app/models
       - ./config:/app/config
     command:
-      - -c "apt-get -y install jieba"
       - start
       - --path
       - models
       - -c
       - config/nlu_config.yml
+    command: pip install jieba
   action_server:
     image: rasa/rasa_core_sdk:latest
     volumes:
