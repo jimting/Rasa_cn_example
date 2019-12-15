@@ -16,7 +16,7 @@ services:
       - --endpoints
       - config/endpoints.yml
   rasa_nlu:
-    image: rasa/rasa_nlu:latest-spacy
+    image: rasa/rasa_nlu:latest-tensorflow
     volumes:
       - ./models/rasa_nlu:/app/models
       - ./config:/app/config

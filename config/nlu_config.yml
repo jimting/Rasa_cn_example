@@ -1,5 +1,5 @@
 language: zh
-pipeline: spacy_sklearn
+pipeline: tensorflow_embedding
 
 policies:
   - name: KerasPolicy
