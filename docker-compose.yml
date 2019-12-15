@@ -6,8 +6,8 @@ services:
       - 4112:5005
     volumes:
       - ./models/rasa_core:/app/models
+      - ./actions:/app/actions
       - ./config:/app/config
-      - ./data:/app/data
     command:
       - start
       - --core
@@ -27,9 +27,11 @@ services:
     command:
       - start
       - --path
-      - models/current
+      - models
       - -c
       - config/nlu_config.yml
+      - -u
+      - current/
   action_server:
     image: rasa/rasa_core_sdk:latest
     volumes:
