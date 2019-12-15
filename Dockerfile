@@ -11,4 +11,5 @@ RUN python -m spacy download en_core_web_md
 RUN python -m spacy link en_core_web_md en
 
 RUN rasa train
-RUN rasa x
+RUN rasa run --enable-api -m models/
+#RUN rasa x
