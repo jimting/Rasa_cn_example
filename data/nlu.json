@@ -140,8 +140,8 @@
         "intent": "ask_weather",
         "entities": [
           {
-            "start": 5,
-            "end":  7,
+            "start": 4,
+            "end":  6,
             "value": "基隆",
             "entity": "city"
           }
@@ -152,8 +152,8 @@
         "intent": "ask_weather",
         "entities": [
           {
-            "start": 3,
-            "end":  5,
+            "start": 2,
+            "end":  4,
             "value": "新北",
             "entity": "city"
           }
@@ -183,7 +183,7 @@
           },
 		  {
 			"start": 2,
-			"end": 5,
+			"end": 4,
 			"value": "明天",
 			"entity": "date"
 		  }
@@ -195,13 +195,13 @@
         "entities": [
           {
             "start": 2,
-            "end":  5,
+            "end":  4,
             "value": "桃園",
             "entity": "city"
           },
 		  {
-			"start": 5,
-			"end": 8,
+			"start": 4,
+			"end": 7,
 			"value": "禮拜天",
 			"entity": "date"
 		  }
@@ -212,14 +212,14 @@
         "intent": "ask_weather",
         "entities": [
           {
-            "start": 4,
-            "end":  6,
+            "start": 3,
+            "end":  5,
             "value": "新竹",
             "entity": "city"
           },
 		  {
-			"start": 6,
-			"end": 8,
+			"start": 5,
+			"end": 7,
 			"value": "後天",
 			"entity": "date"
 		  }
