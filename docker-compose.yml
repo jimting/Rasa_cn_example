@@ -23,7 +23,7 @@ services:
       - ./models/rasa_nlu:/app/models
       - ./config:/app/config
     command:
-      - -c "apt-get -y install nginx"
+      - -c "apt-get -y install jieba"
       - start
       - --path
       - models
