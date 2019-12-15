@@ -7,5 +7,5 @@ class ActionAskWeather(Action):
         return 'action_ask_weather'
 
     def run(self, dispatcher, tracker, domain):
-        dispatcher.utter_message(f'您问的天气地点是哪里呢')
+        dispatcher.utter_message('您问的天气地点是哪里呢')
         return [SlotSet('city', '深圳')]
