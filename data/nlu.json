@@ -1,0 +1,230 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "你好",
+        "intent": "greet",
+        "entities": []
+      },
+	  {
+        "text": "上午好",
+        "intent": "greet",
+        "entities": []
+      },
+	  {
+        "text": "下午好",
+        "intent": "greet",
+        "entities": []
+      },
+	  {
+        "text": "早上好",
+        "intent": "greet",
+        "entities": []
+      },
+	  {
+        "text": "晚上好",
+        "intent": "greet",
+        "entities": []
+      },
+	  {
+        "text": "很好",
+        "intent": "mood_happy",
+        "entities": []
+      },
+	  {
+        "text": "我很好",
+        "intent": "mood_happy",
+        "entities": []
+      },
+	  {
+        "text": "還不錯啦",
+        "intent": "mood_happy",
+        "entities": []
+      },
+	  {
+        "text": "每賣",
+        "intent": "mood_happy",
+        "entities": []
+      },
+	  {
+        "text": "還行",
+        "intent": "mood_happy",
+        "entities": []
+      },
+	  {
+        "text": "好",
+        "intent": "mood_happy",
+        "entities": []
+      },
+	  {
+        "text": "我很難過",
+        "intent": "mood_unhappy",
+        "entities": []
+      },
+	  {
+        "text": "我心情很差",
+        "intent": "mood_unhappy",
+        "entities": []
+      },
+	  {
+        "text": "糟透了",
+        "intent": "mood_unhappy",
+        "entities": []
+      },
+	  {
+        "text": "爛透了",
+        "intent": "mood_unhappy",
+        "entities": []
+      },
+	  {
+        "text": "爛死了",
+        "intent": "mood_unhappy",
+        "entities": []
+      },
+	  {
+        "text": "哭哭",
+        "intent": "mood_unhappy",
+        "entities": []
+      },
+	  {
+        "text": "嗚嗚嗚",
+        "intent": "mood_unhappy",
+        "entities": []
+      },
+      {
+        "text": "天氣怎麼樣",
+        "intent": "ask_weather",
+        "entities": []
+      },
+      {
+        "text": "天氣如何",
+        "intent": "ask_weather",
+        "entities": []
+      },
+      {
+        "text": "會不會下雨",
+        "intent": "ask_weather",
+        "entities": []
+      },
+      {
+        "text": "熱不熱",
+        "intent": "ask_weather",
+        "entities": []
+      },
+      {
+        "text": "臺北天氣怎麼樣",
+        "intent": "ask_weather",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "臺北",
+            "entity": "city"
+          }
+        ]
+      },
+      {
+        "text": "高雄天氣如何",
+        "intent": "ask_weather",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "高雄",
+            "entity": "city"
+          }
+        ]
+      },
+      {
+        "text": "請告訴我基隆的天氣",
+        "intent": "ask_weather",
+        "entities": [
+          {
+            "start": 5,
+            "end":  7,
+            "value": "基隆",
+            "entity": "city"
+          }
+        ]
+      },
+      {
+        "text": "給我新北市的天氣資訊",
+        "intent": "ask_weather",
+        "entities": [
+          {
+            "start": 3,
+            "end":  5,
+            "value": "新北",
+            "entity": "city"
+          }
+        ]
+      },
+      {
+        "text": "臺中會下雨嗎",
+        "intent": "ask_weather",
+        "entities": [
+          {
+            "start": 0,
+            "end":  2,
+            "value": "臺中",
+            "entity": "city"
+          }
+        ]
+      },
+      {
+        "text": "苗栗明天天氣怎麼樣",
+        "intent": "ask_weather",
+        "entities": [
+          {
+            "start": 0,
+            "end":  2,
+            "value": "苗栗",
+            "entity": "city"
+          },
+		  {
+			"start": 2,
+			"end": 5,
+			"value": "明天",
+			"entity": "date"
+		  }
+        ]
+      },
+      {
+        "text": "請問桃園禮拜天會不會下雨",
+        "intent": "ask_weather",
+        "entities": [
+          {
+            "start": 2,
+            "end":  5,
+            "value": "桃園",
+            "entity": "city"
+          },
+		  {
+			"start": 5,
+			"end": 8,
+			"value": "禮拜天",
+			"entity": "date"
+		  }
+        ]
+      },
+      {
+        "text": "請給我新竹後天的天氣資訊",
+        "intent": "ask_weather",
+        "entities": [
+          {
+            "start": 4,
+            "end":  6,
+            "value": "新竹",
+            "entity": "city"
+          },
+		  {
+			"start": 6,
+			"end": 8,
+			"value": "後天",
+			"entity": "date"
+		  }
+        ]
+      }
+    ]
+  }
+}
