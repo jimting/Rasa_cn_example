@@ -17,6 +17,8 @@ templates:
   - text: "你好棒 好棒 好棒棒！"
   utter_unhappy:
   - text: "不要哭哭哦"
+  utter_default:
+  - text: "我聽不懂你在說什麼"
 
 
 
