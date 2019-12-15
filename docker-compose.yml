@@ -18,7 +18,7 @@ services:
       - -u
       - current/
   rasa_nlu:
-    image: rasa/rasa_nlu:latest-mitie
+    image: nlu_with_jieba:latest
     volumes:
       - ./models/rasa_nlu:/app/models
       - ./config:/app/config
