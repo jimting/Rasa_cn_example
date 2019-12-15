@@ -16,8 +16,6 @@ services:
       - rest
       - --endpoints
       - config/endpoints.yml
-      - -u
-      - current/
   rasa_nlu:
     image: nlu_with_jieba:latest
     volumes:
