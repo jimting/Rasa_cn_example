@@ -22,6 +22,7 @@ services:
     volumes:
       - ./models/rasa_nlu:/app/models
       - ./config:/app/config
+      - ./data:/app/data
     command:
       - start
       - --path
