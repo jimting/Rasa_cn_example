@@ -21,7 +21,7 @@ services:
   rasa_nlu:
     image: nlu_with_jieba:latest
     volumes:
-      - ./models/rasa_nlu/current:/app/models
+      - ./models/rasa_nlu:/app/models
       - ./config:/app/config
       - ./data:/app/data
     command:
