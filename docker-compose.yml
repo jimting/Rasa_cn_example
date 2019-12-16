@@ -28,6 +28,8 @@ services:
       - start
       - --path
       - models
+      - -c
+      - config/nlu_config.yml
   action_server:
     image: rasa/rasa_core_sdk:latest
     volumes:
