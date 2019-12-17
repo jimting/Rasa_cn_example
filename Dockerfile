@@ -6,4 +6,4 @@ RUN python -m spacy link zh_core_web_sm zh
 RUN pip install sklearn_crfsuite
 
 #RUN pip install tensorflow==1.8.0
-#RUN pip install jieba
+RUN pip install jieba
