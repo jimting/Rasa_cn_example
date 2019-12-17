@@ -9,6 +9,8 @@ RUN apt-get update -qq && \
   apt-get install -y --no-install-recommends \
   wget \
   unzip 
+  
+ENV PYTHONPATH "${PYTHONPATH}:/app"
 
 RUN wget https://storage.googleapis.com/bert_models/2018_11_03/chinese_L-12_H-768_A-12.zip
 RUN unzip chinese_L-12_H-768_A-12.zip
