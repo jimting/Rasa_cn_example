@@ -1,7 +1,6 @@
 language: zh
 pipeline:
 - name: "nlp_spacy"
-  model: "zh"
 - name: "tokenizer_spacy"
 - name: "intent_entity_featurizer_regex"
 - name: "intent_featurizer_spacy"
