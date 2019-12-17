@@ -4,13 +4,16 @@
 - 下午好
 - 早上好
 - 晚上好
+- 安安
+- 哈囉
+- hello
+- hi
+
 ## intent:mood_happy
-- 很好
-- 我很好
 - 還不錯啦
 - 每賣
 - 還行
-- 好
+- 還可以
 
 ## intent:mood_unhappy
 - 我很難過
