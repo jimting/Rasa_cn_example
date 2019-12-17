@@ -1,3 +1,3 @@
-FROM rasa/rasa_nlu:latest-tensorflow
+FROM rasa/rasa_nlu:latest-mitie
 
-RUN pip install jieba
+RUN pip install git+https://github.com/APCLab/jieba-tw.git
