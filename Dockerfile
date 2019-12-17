@@ -1,6 +1,6 @@
-FROM rasa/rasa_nlu:latest-tensorflow
+FROM rasa/rasa_nlu:latest-mitie
 
-RUN pip install git+https://github.com/mit-nlp/MITIE.git
+RUN pip install tensorflow
 RUN pip install jieba
 
 ADD . /app
