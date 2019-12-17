@@ -1,5 +1,7 @@
 language: zh
-pipeline: tensorflow_embedding
+pipeline:
+- name: "tokenizer_jieba"
+- name: "tensorflow_embedding"
 
 policies:
   - name: KerasPolicy
