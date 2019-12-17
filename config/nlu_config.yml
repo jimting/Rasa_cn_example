@@ -1,18 +1,9 @@
 language: zh
-
 pipeline:
-  - name: "rasa_contrib.nlu.utils.tensorflow_utils.TensorflowNLP"
-#  - name: "rasa_contrib.nlu.debugger.tensorflow_debugger.TensorflowDebugger"
-  - name: "rasa_contrib.nlu.extractors.bilstm_crf_tf_entity_extractor.BilstmCrfTensorFlowEntityExtractor"
-    max_steps: 600
-#    train_hook:
-#      - class: "rasa_nlu_addons.debugger.hooks.TensorObserveHook"
-#        params:
-#          key: "34FRerfFefsdKer4hdF"
-
-  - name: "rasa_contrib.nlu.classifiers.text_cnn_tf_classifier.TextCnnTensorFlowClassifier"
-    max_steps: 600
-  - name: "EntitySynonymMapper"
+- name: "tokenizer_jieba"
+- name: "ner_crf"
+- name: "intent_featurizer_count_vectors"
+- name: "intent_classifier_tensorflow_embedding"
 
 policies:
   - name: KerasPolicy
