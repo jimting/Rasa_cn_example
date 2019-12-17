@@ -5,14 +5,8 @@ class ActionAskWeather(Action):
         return 'action_ask_weather'
 
     def run(self, dispatcher, tracker, domain):
-        city = next(tracker.get_latest_entity_values('city'), None)
-        searching_city = "none"
-        if city is not None:
-            searching_city = city
-        date = next(tracker.get_latest_entity_values('date'), None)
-        searching_date = "none"
-        if date is not None:
-            searching_date = date
+        searching_city = next(tracker.get_latest_entity_values('city'), None)
+        searching_date = next(tracker.get_latest_entity_values('date'), None)
         data = {
             "intent" : "action_ask_weather",
             "city" : searching_city,
