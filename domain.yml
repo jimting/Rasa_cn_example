@@ -9,6 +9,7 @@ actions:
   - utter_happy
   - utter_unhappy
   - action_ask_weather
+  - utter_weather_good
 
 templates:
   utter_greet:
