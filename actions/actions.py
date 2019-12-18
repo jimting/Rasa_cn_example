@@ -1,4 +1,5 @@
 from rasa_core_sdk import Action
+from rasa_core_sdk.events import SlotSet
 
 class ActionAskWeather(Action):
     def name(self):
