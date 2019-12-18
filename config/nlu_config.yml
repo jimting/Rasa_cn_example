@@ -3,10 +3,10 @@ pipeline:
 - name: "nlp_mitie"
   model: "data/total_word_feature_extractor.dat"
 - name: "tokenizer_jieba"
-- name: "ner_crf"
 - name: "intent_entity_featurizer_regex"
-- name: "ner_synonyms"
 - name: "intent_featurizer_count_vectors"
+- name: "ner_crf"
+- name: "ner_synonyms"
 - name: "intent_classifier_tensorflow_embedding"
 
 
