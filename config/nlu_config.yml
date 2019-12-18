@@ -7,7 +7,7 @@ pipeline:
 
 policies:
   - name: KerasPolicy
-    epochs: 200
+    epochs: 100
     batch_size: 50
     max_training_samples: 300
   - name: FallbackPolicy
