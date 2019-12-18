@@ -3,13 +3,14 @@ intents:
   - mood_happy
   - mood_unhappy
   - ask_weather
+entities:
+  - city
 
 actions:
   - utter_greet
   - utter_happy
   - utter_unhappy
   - action_ask_weather
-  - utter_weather_good
 
 templates:
   utter_greet:
@@ -20,5 +21,3 @@ templates:
   - text: "不要哭哭哦"
   utter_default:
   - text: "我聽不懂你在說什麼"
-  utter_weather_good:
-  - text: "{city}的天氣很好哦！"
