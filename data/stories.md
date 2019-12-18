@@ -15,7 +15,8 @@
 ## ask_weather
 * ask_weather
   - action_ask_weather
-  - action_restart
+* weather_city
+  - utter_weather_good
   
 
   
