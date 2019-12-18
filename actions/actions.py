@@ -5,5 +5,5 @@ class ActionAskWeather(Action):
         return 'action_ask_weather'
 
     def run(self, dispatcher, tracker, domain):
-        ent = tracker.latest_message['city']
+        ent = tracker.get_latest_entity_values('city')
         return [SlotSet('city', ent)]
