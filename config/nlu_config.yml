@@ -5,7 +5,7 @@ pipeline:
 - name: "tokenizer_jieba"
 - name: "intent_entity_featurizer_regex"
 - name: "intent_featurizer_count_vectors"
-- name: "ner_crf"
+- name: "ner_mitie"
 - name: "ner_synonyms"
 - name: "intent_classifier_tensorflow_embedding"
 
