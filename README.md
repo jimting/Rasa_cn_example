@@ -43,7 +43,7 @@ tar xvzf total_word_feature_extractor.dat.tar.gz -C ./data
   - action_restart
 ```
   翻譯包：有個故事叫story_happy，遇到greet會做utter_greet這個動作，如果mood_happy就utter_happy！最後action_restart (重新開始對話)
-  * domain.yml範例：()
+  * domain.yml範例：
 ```
 intents:
   - greet
